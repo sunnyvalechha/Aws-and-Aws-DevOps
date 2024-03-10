@@ -7,6 +7,7 @@ Latency is the amount of delay (or time) it takes to send information from one p
 * High Latency is Bad 
 * Low Latency is Good 
 
+
 * Edge Location – This is the location where content will be cached. This is separate from an Aws Region / AZ. 
 * Edge Locations are not just read only, we can also write to them with the help of transfer acceleration.
 * Objects are cached for the life of the Time To Live (TTL)
