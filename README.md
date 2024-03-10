@@ -9,8 +9,11 @@ Latency is the amount of delay (or time) it takes to send information from one p
 
 
 Edge Location – This is the location where content will be cached. This is separate from an Aws Region / AZ. 
+
 Edge Locations are not just read only, we can also write to them with the help of transfer acceleration.
+
 Objects are cached for the life of the Time To Live (TTL)
+
 You can clear cached object, but you will be charged for that. 
 
 Origin – This is the origin of all the files that CDN will distribute. This can be an S3 bucket, an Ec2 instance, an Elastic load balancer or Route 53.
@@ -24,24 +27,30 @@ Real Time Messaging Protocol supports streaming of media files using adobe media
 
 **Practicals**
 
-1. Go to S3 - Create a bucket - Put some images in it 
-2. Go to CloudFront - It is a Global Service
-3. Create Distribution - Web Distribution
+1. Go to S3 - Create a bucket - (Any name)
+2. Block public access (tick) means only Cloud Front should access this bucket.
+3. Bucket Versioning - Enable
+4. Rest all option default, Create bucket
+5. Click on bucket > Properties > Static website hosting > Edit > Enable
+6. Edit static website hosting > Static website hosting > Enable > Save
+7. Upload any images into bucket and save and run the url to check if we can see the image. 
+8. Go to CloudFront - It is a Global Service
+9. Create Distribution - Web Distribution
 	Origin Domain Name - s3 bucket name
 	Origin Path -  particular directory in the origin,  beginning with a forward slash (/). 
 	Do not add a slash (/) at the end of the path.
 	Origin Id - description of the origin
-	S3 bucket access - Yes use OAI (bucket can restrict access to only CloudFront)
-	Create New Oai - Demo-identity
+	Origin access - Legacy access identities
+	Create New Oai - Auto Select the bucket
 	Bucket policy - yes, update
 	Viewer protocol policy - HTTP and HTTPS
 	Settings - Price class - Use all edge locations (best performance)
- 
+ 	Default root object - optional >> index.html
 	WAF - Web application firewall is a layer 7 firewall 
 	Leave everything as default & create distribution 
 	
-4. If distribution is deployed 
-5. Copy the domain name put name in brower's url /imagename
+11. If distribution is deployed 
+12. Copy the domain name put name in brower's url /imagename
 
 s3 - Permissions - Bucket policy - Created automatically that CloudFront Origin Access Identity E3QPH46J3EWB79" this entity update bucket content on cloud front 
 
