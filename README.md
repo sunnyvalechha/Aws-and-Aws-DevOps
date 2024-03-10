@@ -1,5 +1,60 @@
-# Aws_notes | Aws Step by Step Theory and Practicals
+# Cloud Front 
 
+Cloud Front is a Fast Content Delivery network (CDN).
+A CDN is a system of distributed servers (network) that deliver webpages and other web content like data, videos, applications to a user based on the geographical locations of the user, the origin of the webpage, and a content delivery server with low latency and high speed.
+
+Latency is the amount of delay (or time) it takes to send information from one point to the next.
+High Latency is Bad 
+Low Latency is Good 
+![image](https://github.com/sunnyvalechha/Aws_notes/assets/59471885/603c2e02-4012-4d0c-9d65-aafc3fef05cb)
+
+
+Edge Location – This is the location where content will be cached. This is separate from an Aws Region / AZ. 
+Edge Locations are not just read only, we can also write to them with the help of transfer acceleration.
+Objects are cached for the life of the Time To Live (TTL)
+You can clear cached object, but you will be charged for that. 
+
+Origin – This is the origin of all the files that CDN will distribute. This can be an S3 bucket, an Ec2 instance, an Elastic load balancer or Route 53.
+
+Distributions – This is the name given the CDN which consists of a collection of Edge locations. 
+
+![image](https://github.com/sunnyvalechha/Aws_notes/assets/59471885/9837a892-93c6-40f0-b977-3d1e5c5f7747)
+
+Web Distribution – Typically used for Websites.
+
+RTMP – Used for Media Streaming.
+Real Time Messaging Protocol supports streaming of media files using adobe media server, End users view media files using the media player that is provided by cloud front not the locally installed on the device.
+
+![image](https://github.com/sunnyvalechha/Aws_notes/assets/59471885/e6f18563-b501-40e6-ab45-8b0bf5c09a38)
+
+
+
+
+
+1. Go to S3 - Create a bucket - Put some images in it 
+2. Go to CloudFront - It is a Global Service
+3. Create Distribution - Web Distribution
+	Origin Domain Name - s3 bucket name
+	Origin Path -  particular directory in the origin,  beginning with a forward slash (/). 
+	Do not add a slash (/) at the end of the path.
+	Origin Id - description of the origin
+	S3 bucket access - Yes use OAI (bucket can restrict access to only CloudFront)
+	Create New Oai - Demo-identity
+	Bucket policy - yes, update
+	Viewer protocol policy - HTTP and HTTPS
+	Settings - Price class - Use all edge locations (best performance)
+ 
+	WAF - Web application firewall is a layer 7 firewall 
+	Leave everything as default & create distribution 
+	
+4. If distribution is deployed 
+5. Copy the domain name put name in brower's url /imagename
+
+s3 - Permissions - Bucket policy - Created automatically that CloudFront Origin Access Identity E3QPH46J3EWB79" this entity update bucket content on cloud front 
+
+
+
+==============================================================
 * There are four components of IAM
   1. User
   2. Groups
