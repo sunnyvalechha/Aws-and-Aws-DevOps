@@ -1,16 +1,16 @@
 # Cloud Front 
 
-Cloud Front is a Fast Content Delivery network (CDN).
-A CDN is a system of distributed servers (network) that deliver webpages and other web content like data, videos, applications to a user based on the geographical locations of the user, the origin of the webpage, and a content delivery server with low latency and high speed.
+* Cloud Front is a Fast Content Delivery network (CDN).
+* A CDN is a system of distributed servers (network) that deliver webpages and other web content like data, videos, applications to a user, based on the geographical locations of the user, the origin of the webpage, and a content delivery server with low latency and high speed.
 
 Latency is the amount of delay (or time) it takes to send information from one point to the next.
-High Latency is Bad 
-Low Latency is Good 
+* High Latency is Bad 
+* Low Latency is Good 
 
-Edge Location – This is the location where content will be cached. This is separate from an Aws Region / AZ. 
-Edge Locations are not just read only, we can also write to them with the help of transfer acceleration.
-Objects are cached for the life of the Time To Live (TTL)
-You can clear cached object, but you will be charged for that. 
+* Edge Location – This is the location where content will be cached. This is separate from an Aws Region / AZ. 
+* Edge Locations are not just read only, we can also write to them with the help of transfer acceleration.
+* Objects are cached for the life of the Time To Live (TTL)
+* You can clear cached object, but you will be charged for that. 
 
 Origin – This is the origin of all the files that CDN will distribute. This can be an S3 bucket, an Ec2 instance, an Elastic load balancer or Route 53.
 
