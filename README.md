@@ -6,8 +6,6 @@ A CDN is a system of distributed servers (network) that deliver webpages and oth
 Latency is the amount of delay (or time) it takes to send information from one point to the next.
 High Latency is Bad 
 Low Latency is Good 
-![image](https://github.com/sunnyvalechha/Aws_notes/assets/59471885/603c2e02-4012-4d0c-9d65-aafc3fef05cb)
-
 
 Edge Location – This is the location where content will be cached. This is separate from an Aws Region / AZ. 
 Edge Locations are not just read only, we can also write to them with the help of transfer acceleration.
@@ -18,18 +16,12 @@ Origin – This is the origin of all the files that CDN will distribute. This ca
 
 Distributions – This is the name given the CDN which consists of a collection of Edge locations. 
 
-![image](https://github.com/sunnyvalechha/Aws_notes/assets/59471885/9837a892-93c6-40f0-b977-3d1e5c5f7747)
-
 Web Distribution – Typically used for Websites.
 
 RTMP – Used for Media Streaming.
 Real Time Messaging Protocol supports streaming of media files using adobe media server, End users view media files using the media player that is provided by cloud front not the locally installed on the device.
 
-![image](https://github.com/sunnyvalechha/Aws_notes/assets/59471885/e6f18563-b501-40e6-ab45-8b0bf5c09a38)
-
-
-
-
+**Practicals**
 
 1. Go to S3 - Create a bucket - Put some images in it 
 2. Go to CloudFront - It is a Global Service
