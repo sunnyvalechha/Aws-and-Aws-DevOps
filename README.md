@@ -16,7 +16,17 @@ Interview Ques: https://github.com/iam-veeramalla/aws-devops-zero-to-hero/blob/m
 
 * Cost Optimization: We can use the capability of cloudwatch for cloud cost optimization using Lambda. (Project cloud cost optimization)
 
-*  
+Practical:
+
+1. Launch an Ec2 instance t2.micro basic config.
+2. check top command if there is any cpu utilization.
+3. Go to cloudwatch > Metrics > All metrics > Ec2 > Accross all instance > Per instance metrics > search instance id "i-0dfd6883ad473de18" > click on cpu utilization >>> As of now the cpu utilization is empty nothing is there.
+4. We also can see all this information from Ec2 only. Go to Ec2 > monitoring tab > all graphs are there.
+5. By default cloud watch collect metrics for Ec2 instance is "5 minutes"
+6. Run a cpu_spike.py script then monitor in cloudwatch and ec2 as well.
+7. In **Production** environment we look for Average of metrics that if cpu utlization is upto 70% for 1 minute then only report as an Issue.
+8. 
+
 
 
 
