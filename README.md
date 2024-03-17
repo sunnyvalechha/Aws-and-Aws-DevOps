@@ -25,7 +25,12 @@ Practical:
 5. By default cloud watch collect metrics for Ec2 instance is "5 minutes"
 6. Run a cpu_spike.py script then monitor in cloudwatch and ec2 as well.
 7. In **Production** environment we look for Average of metrics that if cpu utlization is upto 70% for 1 minute then only report as an Issue.
-8. 
+8. **Create Alarm** >> select metrics >> Metrics related to ec2 instance >> Ec2 >> Per instance metrics >> search instance id "i-0dfd6883ad473de18" >> select metrics >> Statistic=maximum, Period=1minute, Whenever CPUUtilization is...=greater or equal, Next >> Create SNS >> confirm subscription from SNS >> run the script again will get the notification.
+
+![image](https://github.com/sunnyvalechha/Aws_notes/assets/59471885/fa4107dc-a740-4bb4-a38f-e39661a86f3f)
+
+
+
 
 
 
