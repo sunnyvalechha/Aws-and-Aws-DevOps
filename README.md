@@ -1,3 +1,26 @@
+# AWS Cloud Watch
+
+Repo: https://github.com/iam-veeramalla/aws-devops-zero-to-hero/tree/main/day-16
+
+Interview Ques: https://github.com/iam-veeramalla/aws-devops-zero-to-hero/blob/main/interview-questions/cloudwatch.md
+
+* It is a service which is monitoring, alerting, reporting, loggings of resources on AWS cloud, weather it is a Infrastucture monitoring cloudwatch is useful.
+
+* Real life metrics: In Ec2 - how many Api request ec2 receives or what was the cpu utilization in last 30 minutes or what was the memory consuption in last 30 minutes of ec2 instance.
+
+* Alarms: After collecting metrics like Cpu utilization is 80% / 90% we require some alerts to take action on it and send notifications.
+
+* Log Insights: Cloudwatch can provide insights like this specific service is using Ec2 instance at this point of time.
+
+* Custom metrics: Example, CPU utilization is default metics so cloudwatch tracks the cpu utilization as a metrics for EC2 instances. But cloudwatch does not tracks the memory utilization so someone have to send these metrics to cloudwatch using this custom metics we can track the memory of the instance.
+
+* Cost Optimization: We can use the capability of cloudwatch for cloud cost optimization using Lambda. (Project cloud cost optimization)
+
+*  
+
+
+
+
 # Cloud Front 
 
 * Cloud Front is a Fast Content Delivery network (CDN).
