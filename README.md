@@ -4,7 +4,7 @@ Repo: https://github.com/iam-veeramalla/aws-devops-zero-to-hero/tree/main/day-16
 
 Interview Ques: https://github.com/iam-veeramalla/aws-devops-zero-to-hero/blob/main/interview-questions/cloudwatch.md
 
-* It is a service which is monitoring, alerting, reporting, loggings of resources on AWS cloud, weather it is a Infrastucture monitoring cloudwatch is useful.
+* It is a service which is monitoring, alerting, reporting loggings of resources on AWS cloud, weather it is a Infrastucture monitoring cloudwatch is useful.
 
 * Real life metrics: In Ec2 - how many Api request ec2 receives or what was the cpu utilization in last 30 minutes or what was the memory consuption in last 30 minutes of ec2 instance.
 
@@ -94,7 +94,8 @@ s3 - Permissions - Bucket policy - Created automatically that CloudFront Origin 
 
 
 
-==============================================================
+# Identity and access management (IAM)
+
 * There are four components of IAM
   1. User
   2. Groups
