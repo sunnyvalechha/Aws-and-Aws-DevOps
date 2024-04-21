@@ -1,3 +1,30 @@
+CI - Developers push code to the repository like github and Code commit.
+CD - Every time the code pushed to the repository and if the code is tested fine no bug, no issues so the feature is deployed or released to the main branch.
+
+Technology Stack of Aws
+
+Aws Code-commit where code exist, like GitHub
+
+Aws Code Build like Jenkins (Build and Test)
+
+Aws Elastic Beanstack (Deploy and Provision)
+
+=========================================
+
+Aws Code Commit: Source code repository in Aws like Git.
+- Git repositories can be expensive.
+- Codecommit is a private repository.
+- No size limit on repositories
+- Fully managed, highly available.
+- Code is secure inside the private cloud in Aws account with increased security and compliance.
+- Security (encrypted and access control)
+- Integrated with Jenkins, Aws Codebuild, and other CI tools.
+
+
+
+
+
+
 # Aws Landing Zone
 
 A landing zone is a well-architected, multi-account AWS environment that is a starting point from which you can deploy workloads and applications. It provides a baseline to get started with multi-account architecture, identity and access management, governance, data security, network design, and logging.
