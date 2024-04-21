@@ -1,3 +1,13 @@
+# Aws Landing Zone
+
+A landing zone is a well-architected, multi-account AWS environment that is a starting point from which you can deploy workloads and applications. It provides a baseline to get started with multi-account architecture, identity and access management, governance, data security, network design, and logging.
+
+
+
+
+
+
+
 # AWS Cloud Watch
 
 Repo: https://github.com/iam-veeramalla/aws-devops-zero-to-hero/tree/main/day-16
