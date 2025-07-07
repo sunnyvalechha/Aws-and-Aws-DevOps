@@ -1,3 +1,8 @@
+# Cloud Formation (IAC tool in Aws, like Terraform)
+
+Cloud formation Stack: A collection of Aws resources that implement the templates
+
+
 CI - Developers push code to the repository like github and Code commit.
 CD - Every time the code pushed to the repository and if the code is tested fine no bug, no issues so the feature is deployed or released to the main branch.
 
